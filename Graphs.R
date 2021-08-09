@@ -1,15 +1,3 @@
----
-title: "Graphs"
-author: "orhan yavuz"
-date: "8/8/2021"
-output: html_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-```{r}
 #install.packages("latex2exp")
 #install.packages("scales")
 
@@ -21,9 +9,9 @@ draw_origin <- function(opacity){
   abline(v=0,col=alpha("red",opacity),lty=2)
 }
 
-```
 
-```{r}
+
+
 linearfunctions <- list(function(x){x}, function(x){2*x+1}, function(x){-3*x+3})
 
 nonlinearfunctions <- list(.Primitive("exp"), .Primitive("log"), .Primitive("tan"))
@@ -31,9 +19,9 @@ nonlinearfunctions <- list(.Primitive("exp"), .Primitive("log"), .Primitive("tan
 linearfunctionstring <- c("f(x) = x", "f(x) = 2x+1", "f(x) = -3x+3")
 
 nonlinearfunctionstring <- c("x^2", "log", "tan")
-```
 
-```{r}
+
+
 xlim=c(-5,5)
 ylim=c(-5,5)
 
@@ -46,9 +34,9 @@ png("images/NonLinearFunctionsExamples.png",height=346, width=1021)
 par(mfrow=c(1,3))
 sapply(seq_along(nonlinearfunctions),function(f){plot(nonlinearfunctions[[f]],xlab="x",ylab="y",main=TeX(nonlinearfunctionstring[f]),xlim=c(-5,5),ylim=c(-5,5),lwd=2.5,col=f+4)})
 dev.off()
-```
 
-```{r}
+
+
 xlim <- c(-1,1)
 ylim <- c(-1,1)
 
@@ -81,4 +69,4 @@ sapply(rev(seq_along(slope_functions2)),function(i){
 })
 dev.off()
 
-```
+
