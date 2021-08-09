@@ -1,5 +1,5 @@
 ---
-title: "Machine-Learning-From-Scratch"
+title: "Linear-Regression"
 Technology:
   - Python
   - Jupyter Notebooks
