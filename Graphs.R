@@ -69,7 +69,7 @@ sapply(rev(seq_along(slope_functions2)),function(i){
 })
 dev.off()
 
-png("images/InterceptExamples.png",height=800, width=800)
+png("images/InterceptExamples.png",height=600, width=600)
 f1<-function(x){x}
 f2<-function(x){x+2}
 xlim<-c(-5,5)
@@ -90,7 +90,7 @@ plot(Volume~Girth, data=trees,main="Model fit to tree data",pch=19,cex=1.3)
 abline(model,lwd=2,col="red")
 dev.off()
 
-png("images/trees.png",height=800, width=800)
+png("images/trees.png",height=400, width=400)
 plot(Volume~Girth, data=trees,main="Trees Data",pch=19,cex=1.3)
 dev.off()
 
