@@ -69,4 +69,29 @@ sapply(rev(seq_along(slope_functions2)),function(i){
 })
 dev.off()
 
+png("images/InterceptExamples.png",height=800, width=800)
+f1<-function(x){x}
+f2<-function(x){x+2}
+xlim<-c(-5,5)
+ylim<-c(-5,5)
+plot(f1,xlim=xlim,ylim=ylim, lwd=1.5,xlab="x",ylab="y")
+abline(3,1,lwd=2,col="Red",lty=2)
+abline(-3,1,lwd=2,col="blue",lty=2)
+
+legend("topright", c("f(x) = x","f(x) = x + 3","f(x) = x - 3"),
+       col = c("black","red","blue"),
+       lty = c(1, 2,2), lwd = 2, inset = 0.05
+)
+dev.off()
+
+png("images/RegressionExample.png",height=800, width=800)
+model<-lm(Volume~Girth,data=trees)
+plot(Volume~Girth, data=trees,main="Model fit to tree data",pch=19,cex=1.3)
+abline(model,lwd=2,col="red")
+dev.off()
+
+png("images/trees.png",height=800, width=800)
+plot(Volume~Girth, data=trees,main="Trees Data",pch=19,cex=1.3)
+dev.off()
+
 
