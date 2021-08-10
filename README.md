@@ -13,7 +13,7 @@ After that, we will write a basic linear regression model using numpy in python.
 
 This will be a 3 part guide:
 <ol>
-    <li><a target="_blank" href="https://www.orhanyavuz.com/projects/Linear-Regression/LinearRegression">What is it?</a></li>
-    <li>How to use it?</li>
+    <li><a target="_blank" href="https://www.orhanyavuz.com/projects/Linear-Regression/part-1">What is it?</a></li>
+    <li><a target="_blank" href="https://www.orhanyavuz.com/projects/Linear-Regression/part-2">How to use it?</a></li>
     <li>How does it work?</li>
 </ol>
